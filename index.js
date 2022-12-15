@@ -66,20 +66,21 @@ arrowButton.addEventListener("click", function () {
 });
 
 // dashboard button Main reveal -----
-dashboardBtn.innerHTML = `<img src="/img/downArw.png" alt="">`;
+dashboardBtn.innerHTML = `<img src="./img/downArw.png" alt="">`;
 dashboardItems.classList.add("displayNone");
 
 dashboardBtn.addEventListener("click", function () {
-    if (dashboardBtn.innerHTML === `<img src="/img/upArw.png" alt="">`) {
-        dashboardBtn.innerHTML = `<img src="/img/downArw.png" alt="">`;
+    if (dashboardBtn.innerHTML === `<img src="./img/upArw.png" alt="">`) {
+        dashboardBtn.innerHTML = `<img src="./img/downArw.png" alt="">`;
         dashboardItems.classList.add("displayNone");
 
-    } else if (dashboardBtn.innerHTML === `<img src="/img/downArw.png" alt="">`) {
-        dashboardBtn.innerHTML = `<img src="/img/upArw.png" alt="">`;
+    } else if (dashboardBtn.innerHTML === `<img src="./img/downArw.png" alt="">`) {
+        dashboardBtn.innerHTML = `<img src="./img/upArw.png" alt="">`;
         dashboardItems.classList.remove("displayNone");
     }
 
 });
+
 
 
 // Scrollbar hover ----- 
