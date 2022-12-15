@@ -1,0 +1,84 @@
+
+/* Rotaion when  plus ---  */
+@keyframes RotationP{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+/* Rotaion when  minus ---  */
+@keyframes RotationM{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Width minus ---  */
+@keyframes WidthM{
+    0%{
+        width: 265px;
+    }
+    100%{
+        width: 75px;
+    }
+}
+/* Width plus ---  */
+@keyframes WidthP{
+    0%{
+        width: 75px;
+    }
+    100%{
+        width: 265px;
+    }
+}
+
+
+/* Height Plus =---- */
+
+@keyframes heightP{
+    0%{
+        height: 160px;
+    }
+    100%{
+        height: 322px;
+    }
+}
+/* Height Minus =---- */
+
+@keyframes heightM{
+    0%{
+        height: 322px;
+    }
+    100%{
+        height: 160px;
+    }
+}
+
+
+/* User main height min max ---  */
+/* Plus */
+@keyframes userHeightP{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 255px;
+    }
+}
+/* minus */
+
+@keyframes userHeightM{
+    0%{
+        height: 255px;
+    }
+    100%{
+        height: 0px;
+    }
+}

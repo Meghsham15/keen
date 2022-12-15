@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+div#left {
+    width: 265px;
+    height: 100%;
+    background: #202b46;
+    overflow: hidden;
+}
+
+.but{
+    display: flex;
+    transform: rotate(0deg);
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    height: 70px;
+    border-bottom: 1px dashed #33446C;
+}
+.logo img {
+    width: 93px;
+}
+.logo button {
+    background: #323c55;
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    /* padding: 0px 0px; */
+    font-size: 15px;
+}
+.fArr{
+    color: white;
+}
+
+.leftMid{
+    /* width: 100%; */
+    height: 425px;
+}
+
+.leftMidInner {
+    height: 395px;
+    overflow: hidden;
+    margin: 15px 5px;
+    overflow-y: scroll;
+}
+
+.leftMidInner::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+.leftMidInner::-webkit-scrollbar-thumb {
+    background: #3b3b64;
+    border-radius: 6px;
+    background-clip: content-box;
+    visibility: hidden;
+}
+.leftMidInnerLight::-webkit-scrollbar-thumb {
+    background: #eaeef2;
+}
+
+.leftMidInnerScroll::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.leftMidInContent {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.dasboard {
+    padding: 0.65rem 1rem;
+    display: flex;
+    width: 100%;
+    color: white;
+    align-items: center;
+}
+.dasboard img{
+    width: 1rem;
+    filter: invert(1);
+}
+
+.logo-title {
+    width: 85%;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.logo-title h5{
+    margin: 0px 17px;
+}
+.downArrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.downArrow img{
+    width: 10px;
+}
+.dasboardItems {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+}
+
+.dashboardItemsInner {
+    width: 87%;
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* .dashboardItemsInner button {
+    padding: 11px;
+    text-align: left;
+    border-radius: 7px;
+    font-size: 14px;
+    word-spacing: 10px;
+    background: none;
+    margin: 1px 0px;
+    border: none;
+    width: 90%;
+    color: #a1a5b7;
+    cursor: pointer;
+}
+.dashboardItemsInner button:hover {
+    color: white;
+} */
+#showLeft {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    padding: 10px 0px;
+    border: none;
+    background: none;
+    align-items: center;
+    cursor: pointer;
+    color: #a1a5b7;
+}
+p.pmSign {
+    /* padding: 8px 3px; */
+    background: #464f68;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    padding: 0px 2px;
+}
+
+
+.leftBottom {
+    /* padding: 13px 45px; */
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.docsBtn a{
+    text-decoration: none;
+    color: #a8b5c3;
+    background: #2b334b;
+    padding: 12px;
+    border-radius: 12px;
+    padding: 12px 40px;
+    font-size: 15px;
+}
+
+.displayNone{
+    display: none;
+}
+
+
+/* Pages Sections ------  */
+
+.pages {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.pagesHeading {
+    color: #646477;
+    font-size: 13px;
+    font-weight: 600;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+button.userShowBtn {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.userMain {
+    display: flex;
+    align-items: center;
+    color: #8d98a5;
+    font-size: 14px;
+    justify-content: space-between;
+    font-weight: lighter;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.iconHeading {
+    display: flex;
+    align-items: center;
+}
+.userMain h4 {
+    /* margin-right: 80px; */
+    margin-left: 10px;
+}
+.userBtnDark{
+    color: #8d98a5;
+}
+.userBtnDark:hover{
+    color: white;
+}
+.userBtnIcons{
+    color: #8d98a5;
+}
+.userBtnIcons:hover{
+    color: black;
+}
+.userMain:hover{
+    color: white;
+}
+.userProfiles {
+    margin-bottom: 20px;
+    width: 96%;
+}
+.userMainContents{
+    overflow: hidden;
+    height: 0px;
+}
+
+.userMainContentButtons {
+    padding: 11px;
+    text-align: left;
+    border-radius: 7px;
+    font-size: 14px;
+    word-spacing: 10px;
+    background: none;
+    margin: 1px 0px;
+    border: none;
+    width: 90%;
+    color: #a1a5b7;
+    cursor: pointer;
+}
+
+.userMainContentButtons:hover {
+    color: white;
+}
+
+.userMainLight:hover{
+    color: black;
+}
+
+
+/* Mid containter -----  */
+
+div#mid {
+    background: #f6f6f6;
+    width: 80%;
+}
+nav {
+    height: 70px;
+    padding: 0px 35px;
+    /* margin: 0px 35px; */
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+}
+.navWords {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #5e6278;
+}
+.navWordsInner {
+    padding: 10px 13px;
+    border-radius: 6px;
+    border: none;
+    margin: 0px 5px;
+    font-weight: bold;
+    font-size: 13px;
+    background: none;
+    cursor: pointer;
+}
+/* .navWordsInner:hover{
+    background: #f4f6fa;
+    color: #4199ff;
+    background: #4199ff;
+    color: white;
+} */
+
+.navWordsLight{
+    background: #f4f6fa;
+    color: #4199ff;
+}
+.navWordsDark{
+    background: #4199ff;
+    color: white;
+}
+
+.navIcons {
+    width: 39%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.iconsInner {
+    overflow: hidden;
+    border: none;
+    font-size: 22px;
+    /* margin: 0px 11px; */
+    color: #a1a5b7;
+    margin-right: 15px;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.iconsInnerBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.iconsInnerBorder:hover{
+    color: #4199ff;
+    background: #f4f6fa;
+}
+.iconsInnerBorderDark:hover{
+    background: #292b3a;
+}
+.navPic {
+    padding: 0px;
+    margin-right: 0px;
+}
+.navPic img {
+    width: 42px;
+    border-radius: 9px;
+}
+.navFlag{
+    padding: 0px;
+}
+.navFlag img {
+    width: 20px;
+    border-radius: 7px;
+}
+
+/* Dashboard hover box =---- */
+
+.navDashHover {
+    background: #ffffff;
+    position: relative;
+    width: 600px;
+    /* height: 100px; */
+    /* top: 0px; */
+    display: block;
+    padding: 25px;
+    /* right: 770px; */
+    border-radius: 10px;
+    left: 50px;
+    box-shadow: 0px 0px 4px -2px grey;
+    display: none;
+}
+.navDashItem {
+    width: 272px;
+    /* background: red; */
+    display: inline-block;
+    padding: 8px 20px;
+    /* height: 30px; */
+    cursor: pointer;
+}
+.navMenu {
+    display: flex;
+    align-items: center;
+}
+.navMenuIcon {
+    font-size: 26px;
+    padding: 7px;
+    color: blue;
+    display: flex;
+    /* background: #f4f4f4; */
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+}
+.navMenuTitle h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.navMenuTitle p {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+}
+
+
+/* layout Hover box ----  */
+
+.layoutHover {
+    background: #ffffff;
+    position: relative;
+    width: 490px;
+    display: none;
+    border-radius: 10px;
+    left: 289px;
+    box-shadow: 0px 0px 4px -2px grey;
+    flex-direction: column;
+    padding: 25px;
+}
+.layoutTop {
+    display: flex;
+    width: 100%;
+}
+.layoutImg{
+    width: 60%;
+}
+.layoutImg img {
+    width: 100%;
+    border-radius: 15px;
+}
+.layoutList {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.layoutListItem {
+    font-size: 14px;
+    padding: 10px;
+    width: 190px;
+    color: gray;
+    font-weight: bolder;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+}
+.layoutListItem:hover{
+    background: #f4f6fb;
+    color: #64acf6;
+}
+
+.backBlack{
+    background: #1e1e2d;
+}
+.colorWhite{
+    color: white;
+}
+
+/* background white ----  */
+
+.backWhite{
+    background: #f6f6f6;
+}
+.backWhite:hover{
+    color: black;
+}
