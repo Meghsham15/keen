@@ -1,0 +1,87 @@
+div#mid {
+    background: #f6f6f6;
+    width: 100%;
+}
+div#left {
+    width: 265px;
+    height: 100%;
+    background: #202b46;
+    overflow: hidden;
+    z-index: 1;
+}
+.navIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.desk{
+    display: none;
+}
+
+nav {
+    height: 70px;
+    padding: 0px 0px;
+    /* margin: 0px 35px; */
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.iconsInner {
+    overflow: hidden;
+    border: none;
+    font-size: 18px;
+    /* margin: 0px 11px; */
+    color: #a1a5b7;
+    margin-right: 8px;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px;
+}
+.navWords {
+    /* width: 60%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #5e6278;
+}
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background: none;
+    border: none;
+    margin-right: 12px;
+}
+.moblie img{
+    width: 36px;
+}
+.leftMid {
+    /* width: 100%; */
+    height: 85vh;
+}
+.leftMidInner {
+    height: 100%;
+    overflow: hidden;
+    margin: 15px 5px;
+    overflow-y: scroll;
+}
+.leftMobile {
+    display: none;
+    position: absolute;
+}
+.leftMidSide {
+    position: absolute;
+    height: 100vh;
+    width: 40vw;
+    right: 0;
+    z-index: 1;
+}

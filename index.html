@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="bottom.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
     <title>Keen - Multi-demo Bootstrap 5 HTML Admin Dashboard Theme by Keenthemes</title>
 </head>
 
 <body>
 
     <div class="container">
-        <div id="left">
+        <div id="left" class="leftMobile">
             <div class="logo">
                 <img src="https://preview.keenthemes.com/keen/demo1/assets/media/logos/default-dark.svg" alt="">
-                <button id="dArr">
+                <button id="dArr" >
                     <div class="but">
                         <p class="fArr">❮</p>
                         <p class="sArr">❮</p>
@@ -519,17 +520,32 @@
                 </div>
             </div>
         </div>
+        <div class="leftMidSide" onclick="leftMobileHide()">
+            
+        </div>
 
         <div id="mid">
+
+            <!-- Mid right ---  -->
+            <div class="midRight">
+                <p>
+                    Demos
+                </p>
+                <p>
+                    Help
+                </p>
+            </div>
 
             <!-- Navbar -----  -->
             <nav>
                 <div class="navWords">
-                    <button id="dashBoard" class="navWordsInner">Dashboards</button>
-                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner">Pages</button>
-                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner">Apps</button>
-                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner" id="layouts">Layouts</button>
-                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner">Help</button>
+                    <button onclick="leftMobile()" class="mobile"><ion-icon name="menu"></ion-icon></button>
+                    <button class="mobile"><img src="https://preview.keenthemes.com/keen/demo1/assets/media/logos/default-small.svg" alt=""></button>
+                    <button id="dashBoard" class="navWordsInner desk">Dashboards</button>
+                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner desk">Pages</button>
+                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner desk">Apps</button>
+                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner desk" id="layouts">Layouts</button>
+                    <button onmouseover="navMouseOver(this)" onmouseleave="navMouseLeave(this)"  class="navWordsInner desk">Help</button>
                 </div>
 
                 <div class="navIcons">
@@ -540,6 +556,7 @@
                     <button class="iconsInner navFlag"><img src="https://preview.keenthemes.com/keen/demo1/assets/media/flags/united-states.svg" alt=""></button>
                     <button class="iconsInner"> <div class="iconsInnerBorder"><ion-icon name="sunny"></ion-icon></div></button>
                     <button class="iconsInner navPic"><img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-3.jpg" alt=""></button>
+                    <button class="iconsInner mobile"><ion-icon name="options"></ion-icon></button>
                 </div>
             </nav>
 
@@ -654,6 +671,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <script type="text/javascript" src="Dark.js"></script>

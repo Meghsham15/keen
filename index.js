@@ -66,16 +66,16 @@ arrowButton.addEventListener("click", function () {
 });
 
 // dashboard button Main reveal -----
-dashboardBtn.innerHTML = `<img src="/img/downArw.png" alt="">`;
+dashboardBtn.innerHTML = `<img src="./img/downArw.png" alt="">`;
 dashboardItems.classList.add("displayNone");
 
 dashboardBtn.addEventListener("click", function () {
-    if (dashboardBtn.innerHTML === `<img src="/img/upArw.png" alt="">`) {
-        dashboardBtn.innerHTML = `<img src="/img/downArw.png" alt="">`;
+    if (dashboardBtn.innerHTML === `<img src="./img/upArw.png" alt="">`) {
+        dashboardBtn.innerHTML = `<img src="./img/downArw.png" alt="">`;
         dashboardItems.classList.add("displayNone");
 
-    } else if (dashboardBtn.innerHTML === `<img src="/img/downArw.png" alt="">`) {
-        dashboardBtn.innerHTML = `<img src="/img/upArw.png" alt="">`;
+    } else if (dashboardBtn.innerHTML === `<img src="./img/downArw.png" alt="">`) {
+        dashboardBtn.innerHTML = `<img src="./img/upArw.png" alt="">`;
         dashboardItems.classList.remove("displayNone");
     }
 
@@ -483,3 +483,17 @@ function sidebarTheme(ele){
         leftMidInner.classList.remove("leftMidInnerLight");
     }
 }
+
+
+// Left reveal in mobile ---- 
+function leftMobile(){
+    document.querySelector(".leftMobile").style.display = "block";
+    console.log("clicked");
+}
+function leftMobileHide(){
+    document.querySelector(".leftMobile").style.display = "none";
+}
+
+window.addEventListener("resize", (event) => {
+    location.reload();
+});
