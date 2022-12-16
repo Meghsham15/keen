@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
 *{
     margin: 0;
     padding: 0%;
@@ -11,7 +11,7 @@
     display: flex;
 }
 div#left {
-    width: 265px;
+    width: 320px;
     height: 100%;
     background: #202b46;
     overflow: hidden;
@@ -288,6 +288,7 @@ button.userShowBtn {
 #mid {
     background: #f6f6f6;
     width: 100%;
+    overflow-y: scroll;
 }
 nav {
     height: 70px;
@@ -296,6 +297,8 @@ nav {
     display: flex;
     background: #ffffff;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 .navWords {
     width: 60%;
@@ -387,15 +390,15 @@ nav {
 
 .navDashHover {
     background: #ffffff;
-    position: relative;
+    position: absolute;
     width: 600px;
     /* height: 100px; */
-    /* top: 0px; */
+    top: 65px;
     display: block;
     padding: 25px;
     /* right: 770px; */
     border-radius: 10px;
-    left: 50px;
+    left: 290px;
     box-shadow: 0px 0px 4px -2px grey;
     display: none;
 }
@@ -437,11 +440,13 @@ nav {
 
 .layoutHover {
     background: #ffffff;
-    position: relative;
+    position: absolute;
     width: 490px;
+    z-index: 1;
+    top: 73px;
     display: none;
     border-radius: 10px;
-    left: 289px;
+    right: 260px;
     box-shadow: 0px 0px 4px -2px grey;
     flex-direction: column;
     padding: 25px;
@@ -505,22 +510,216 @@ nav {
     height: 197px;
     position: absolute;
     width: 35px;
-    right: 0;
+    right: 20px;
     display: flex;
     top: 250px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.midRight p{
+.midRight p {
     transform: rotate(91deg);
     width: auto;
     padding: 7px 13px;
     background: white;
-    box-shadow: 0px 0px 4px 1px grey;
+    box-shadow: 0px 0px 6px -3px grey;
     border-radius: 5px;
     font-size: 13px;
     cursor: pointer;
     font-weight: bolder;
     color: gray;
+}
+
+/* Middle section ----  */
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.headerL h4 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.headerL p{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    word-spacing: 6px;
+    margin-top: 8px;
+}
+
+.headerR {
+    display: flex;
+    align-items: center;
+}
+
+.headerR select{
+    border: none;
+    background: none;
+}
+.headerRBtn {
+    padding: 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    border: none;
+    background: #50cd89;
+    color: white;
+    border-radius: 7px;
+    margin-left: 25px;
+}
+
+.mainBoxes {
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+.mainCards {
+    width: 440px;
+    height: 235px;
+    display: inline-block;
+    margin: 12px 20px;
+    background: white;
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 15px;
+    color: white;
+}
+
+.firstCard {
+    background: #3e97ff;
+    background-image: url(https://preview.keenthemes.com/keen/demo1/assets/media/svg/shapes/widget-bg-1.png);
+}
+.cardInner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cardProjectTop{
+    display: flex;
+    flex-direction: column;
+}
+.cardInner p{
+    font-weight: bolder;
+    font-size: 14px;
+    color: #c7e1ff;
+    word-spacing: 3px;
+}
+.pending {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 99%;
+}
+.cardProjectBot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.percentLine{
+    width: 95%;
+    height: 8px;
+    border-radius: 16px;
+    background: #9fcbff;
+    margin-top: 14px;
+}
+
+.percentInner{
+    height: 100%;
+    width: 72%;
+    border-radius: 20px;
+    background: white;
+}
+
+/* second card ---  */
+.secondCard p {
+    color: #babac5;
+}
+.cardAmount {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.cardAmountInner {
+    color: black;
+    display: flex;
+    margin-bottom: 6px;
+}
+.cardAmountRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardAmountInner h1{
+    font-weight: bolder;
+}
+.cardAmountInner h4{
+    color: #babac5;
+    font-weight: bolder;
+}
+
+.cardAmountInner h3 {
+    font-size: 13px;
+    padding: 5px 10px;
+    color: #50cd89;
+    font-weight: bolder;
+    background: #e8fff3;
+    border-radius: 6px;
+    margin-left: 10px;
+    word-spacing: 2px;
+}
+
+.cardBotChart {
+    display: flex;
+    align-items: center;
+}
+
+.cardBotChart img{
+    width: 22%;
+}
+.chartInfo{
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chartInfoInner {
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    justify-content: space-between;
+}
+
+.chartInfoRight h5{
+    color: black;
+    font-weight: bolder;
+}
+
+.chartList {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.chartList h3{
+    margin-right: 10px;
+}
+.green {
+    color: #50cd89;
+    font-weight: bolder;
+    /* font-size: 18px; */
+}
+h3.blue {
+    color: #3e97ff;
+}
+h3.gray {
+    color: #e4e6ef;
 }

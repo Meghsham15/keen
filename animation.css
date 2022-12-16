@@ -23,7 +23,7 @@
 /* Width minus ---  */
 @keyframes WidthM{
     0%{
-        width: 265px;
+        width: 320px;
     }
     100%{
         width: 75px;
@@ -35,7 +35,7 @@
         width: 75px;
     }
     100%{
-        width: 265px;
+        width: 320px;
     }
 }
 
